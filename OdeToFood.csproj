@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="glyphicon" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\OdeToFood.DataAccessLayer\OdeToFood.DataAccessLayer.csproj" />
   </ItemGroup>
 

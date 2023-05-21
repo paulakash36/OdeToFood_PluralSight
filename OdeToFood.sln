@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdeToFood", "OdeToFood.csproj", "{AAF7820E-DC6E-40E1-AAF4-8F8C26EDF991}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdeToFood", "OdeToFood.csproj", "{AAF7820E-DC6E-40E1-AAF4-8F8C26EDF991}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdeToFood.Core", "..\OdeToFood.Core\OdeToFood.Core.csproj", "{0C7D875C-85E2-4DB9-9672-2B91DC0C6767}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdeToFood.Core", "..\OdeToFood.Core\OdeToFood.Core.csproj", "{0C7D875C-85E2-4DB9-9672-2B91DC0C6767}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdeToFood.DataAccessLayer", "..\OdeToFood.DataAccessLayer\OdeToFood.DataAccessLayer.csproj", "{632A947E-CC11-4AE6-A5AC-017369D14E3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdeToFood.DataAccessLayer", "..\OdeToFood.DataAccessLayer\OdeToFood.DataAccessLayer.csproj", "{632A947E-CC11-4AE6-A5AC-017369D14E3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
