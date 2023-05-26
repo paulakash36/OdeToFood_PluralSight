@@ -1,3 +1,8 @@
+global using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using OdeToFood.DataAccessLayer;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+
 namespace OdeToFood
 {
     public class Program
@@ -5,15 +10,17 @@ namespace OdeToFood
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            var startup = new Startup(builder.Configuration);
-            startup.ConfigureServices(builder.Services); // calling ConfigureServices method
+            
+            builder.Services.AddScoped<IRestaurantData, SqlRestaurantData>();
+            builder.Services.AddDbContextPool<OdeToFoodDbContext>(options =>
+            {
+                options.UseSqlServer(builder.Configuration.GetConnectionString("OdeToFoodDb"));
+            });
             
             // Add services to the container.
             builder.Services.AddRazorPages();
 
             var app = builder.Build();
-            
-            startup.Configure(app, builder.Environment); // calling Configure method
             
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
